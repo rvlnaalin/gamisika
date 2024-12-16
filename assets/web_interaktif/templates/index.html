@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Interaktif</title>
+    <style>
+      /* Gaya untuk seluruh body halaman */
+      body {
+        font-family: "Times New Roman", Times, serif, sans-serif;
+        background-color: #f4f4f9; /* Warna latar belakang */
+        color: #333; /* Warna teks default */
+        margin: 0;
+        display: flex; /* Gunakan Flexbox untuk tata letak */
+        flex-direction: column; /* Atur elemen secara vertikal */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        justify-content: center; /* Pusatkan elemen secara vertikal */
+        height: 100vh; /* Tinggi penuh layar */
+        text-align: center; /* Teks rata tengah */
+      }
+
+      /* Gaya untuk heading utama */
+      h1 {
+        color: #4caf50; /* Warna hijau untuk judul */
+        font-size: 50px; /* Ukuran font judul */
+        position: relative; /* Posisi relatif untuk pergeseran */
+        top: -250px; /* Geser ke atas 250px */
+      }
+
+      /* Gaya untuk paragraf */
+      p {
+        font-size: 25px; /* Ukuran font paragraf */
+        color: #555; /* Warna teks paragraf */
+        position: absolute; /* Posisi absolut untuk pergeseran */
+        bottom: 525px; /* Geser ke atas 550px dari bawah layar */
+        right: 95px; /* Geser ke kanan 95px */
+      }
+
+      /* Kotak di pinggir layar */
+      .side-box {
+        position: fixed; /* Menempatkan kotak tetap di layar */
+        top: 0; /* Letakkan di bagian atas */
+        left: 0; /* Letakkan di sebelah kiri layar */
+        width: 20%; /* Lebar kotak */
+        height: 100%; /* Tinggi kotak sepanjang layar */
+        background-color: #4caf50; /* Warna hijau */
+        color: white; /* Warna teks putih */
+        padding: 20px; /* Padding di dalam kotak */
+        box-sizing: border-box; /* Agar padding tidak mempengaruhi ukuran total kotak */
+      }
+
+      /* Gaya untuk menu (ul dan li) */
+      ul {
+        list-style-type: none; /* Menghilangkan bullet point */
+        padding: 0;
+      }
+
+      ul li {
+        margin: 10px 0; /* Memberi jarak antar item */
+      }
+
+      ul li a {
+        text-decoration: none; /* Menghilangkan garis bawah pada link */
+        font-size: 20px; /* Ukuran font link */
+        color: #ffffff; /* Warna teks link */
+        background-color: #007bff; /* Warna latar belakang link */
+        padding: 10px 20px; /* Menambah padding di sekitar teks */
+        border-radius: 5px; /* Membulatkan sudut link */
+        transition: background-color 0.3s ease; /* Efek transisi warna */
+        position: absolute; /* Menentukan posisi manual dengan px */
+      }
+
+      /* Posisi khusus untuk item menu */
+      .menu-item-1 {
+        top: 200px;
+        left: 80px;
+      }
+
+      .menu-item-2 {
+        top: 250px;
+        left: 400px;
+      }
+
+      .menu-item-3 {
+        top: 350px;
+        left: 400px;
+      }
+
+      .menu-item-4 {
+        top: 450px;
+        left: 250px;
+      }
+
+      .menu-item-5 {
+        top: 250px;
+        left: 400px;
+      }
+
+      .menu-item-6 {
+        top: 350px;
+        left: 400px;
+      }
+
+      .menu-item-7 {
+        top: 450px;
+        left: 400px;
+      }
+
+      /* Efek hover */
+      ul li a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Kotak di pinggir layar -->
+    <div class="side-box">
+      <h1>Menu</h1>
+      <ul>
+        <li>
+          <a href="/pengaturan" class="menu-item-1">Pengaturan</a>
+        </li>
+        <li>
+          <a href="/game/game1" class="menu-item-2">Simulasi GMB</a>
+        </li>
+        <li>
+          <a href="/game/game2" class="menu-item-3">Simulasi GLBB</a>
+        </li>
+        <li>
+          <a href="/game/game4" class="menu-item-4">Tebak "Kata"</a>
+        </li>
+        <li>
+          <a href="/game/game5" class="menu-item-5">Angry Bird</a>
+        </li>
+        <li>
+          <a href="/game/game6" class="menu-item-6">Drop Down</a>
+        </li>
+        <li>
+          <a href="/game/game7" class="menu-item-7">Teka Teki Silang</a>
+        </li>
+      </ul>
+    </div>
+
+    <h1>GAMISIKA</h1>
+    <p>Ayo Belajar dan Bermain bersama Fisika!</p>
+  </body>
+</html>
